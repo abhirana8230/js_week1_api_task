@@ -1,0 +1,25 @@
+Copy by Value -
+
+This method is used for primitive data type i.e. Boolean,Null,Undefined,String and Number. In this method, the value assigned to the variable is directly stored in memory. Here, the value of one variable is copied directly to other variable.
+e.g.- var a = 20;
+        var b = 35;
+        var c = a;
+        var d = b;
+        console.log(c,d);
+        
+         output- 20  35 
+
+Here,the values of variable 'a' and 'b' are copied into variables 'c' and 'd' but still they are not connected to each other because value are directly copied into new variables.
+
+Copy by Reference -
+
+This method is used for non primitive data type i.e. Array,Function and Object. In this method, the  value assigned is not directly stored in memory but the address of memory location is stored.
+e.g- var arr1 = [1,2,3,4];
+       var arr2 = arr1;
+       arr2.pop();
+       console.log(arr1);
+
+       output - [1,2,3]
+
+Here, the value of 'arr1' is changed by changing the value of 'arr2' because both 'arr1' and 'arr2' are storing the address of the same memory location. 
+
